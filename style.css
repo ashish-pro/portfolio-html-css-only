@@ -1,10 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
+/* Body Header */
+#body-header{
+    height: 65vh;
+    /* background-image: url('https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-image: url('https://images.unsplash.com/photo-1516557070061-c3d1653fa646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-position:center; */
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-attachment: fixed;
 }
+
+/* Horizotal List */
+.hz-list{
+    list-style: none;
+
+}
+
+.hz-list li{
+    display: inline-block;
+    margin: 5px 8px 8px 0px;
+}
+
+.hz-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: #f8fe85;
+    border-bottom: 1px solid indianred;
+}  
+
+.text-center{
+    text-align: center;
+}
+
+/* Name and Social Icon */
+
+#name-social-container{
+    margin-top: 18vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+
+ .social-icon li a{ 
+    color: #1d1d1f;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+} 
+
+.social-icon li a:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.2);
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(2n){
+    background-color: gray;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/* About Sectiion CSS */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.rounded-gradient-borders {
+    border: double 10px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  #about-para{
+    padding: 10px;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+  }
+  #about-para p{
+    font-size: 1.2rem;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-weight: 200; 
+    text-align: justify;
+  }
