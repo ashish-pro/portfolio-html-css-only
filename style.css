@@ -68,14 +68,20 @@
 }
 
 #icons{
-    margin-top: 5px;
+    margin-top: 0 15px;
 }
 
 
- .social-icon li a{ 
-    color: #1d1d1f;
-    padding: 10px;
-    font-size: 1rem;
+ .social-icon li a{
+    width: 60px;
+    height: 60px; 
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    color: #666;
+    padding: 1rem;
+    font-size: .6rem;
     border-radius: 50%;
     transition: .5s;
 } 
