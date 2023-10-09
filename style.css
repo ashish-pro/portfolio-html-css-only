@@ -297,7 +297,7 @@ section:nth-child(2n + 1) {
 
 #timeline-divider i {
     transform: rotate(90deg);
-    margin-top: -35px;
+    margin-top: -34px;
     display: block;
     color: #2857a4;
 }
@@ -325,6 +325,7 @@ section:nth-child(2n + 1) {
     padding: 2px;
     color: grey;
     line-height: 20px;
+    
 }
 
 
