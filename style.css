@@ -325,7 +325,7 @@ section:nth-child(2n + 1) {
     padding: 2px;
     color: grey;
     line-height: 20px;
-    
+     
 }
 
 
@@ -593,14 +593,22 @@ button:focus {
 }
 
 
+/* Responsiveness   */
 
-
-@media only screen and (max-width: 572px) {
+@media screen and (max-width: 600px) {
     
-    .timeline-box {
-        width: 100%;
-        left: 10% !important;
+    .timeline-divider {
+        left: 5%;
     }
+
+    .timeline-box{
+        left: 12%;
+        width: 80%;
+    }
+
+   .timeline-box::after{
+    left: -12% !important;
+   }
 
     .bars {
         display: block;
@@ -614,7 +622,7 @@ button:focus {
 
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 
     .timeline-box {
