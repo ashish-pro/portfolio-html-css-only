@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ashish Upadhyay :- Portfolio</title>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -10,6 +13,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
+    <script defer src="skills.js"></script>
   </head>
   <body>
     <header id="body-header">
@@ -83,7 +88,7 @@
             </li>
             <li>
               <a href="https://github.com/ashish-pro" target="_blank">
-                <i class="fab fa-github" ></i>
+                <i class="fab fa-github"></i>
               </a>
             </li>
             <li>
@@ -130,61 +135,79 @@
 
         <div class="skills-display">
           <div class="skill-progress">
-            <div class="seventy-five-percent mb-blue">
+            <div class="mb-blue" data-bar-width="75">
               <div class="skill-name">
-                <span> React </span>
+                <span> React JS </span>
               </div>
             </div>
           </div>
           <div class="skill-progress">
-            <div class="seventy-five-percent mb-orange">
+            <div class="eighty-five-percent mb-orange" data-bar-width="75">
               <div class="skill-name">
                 <span> HTML </span>
               </div>
             </div>
           </div>
           <div class="skill-progress">
-            <div class="sixty-percent mb-light-purple">
+            <div class="eighty-percent mb-light-purple" data-bar-width="70">
               <div class="skill-name">
                 <span> CSS </span>
               </div>
             </div>
           </div>
           <div class="skill-progress">
-            <div class="eighty-percent mb-teal">
+            <div class="fifty-percent mb-teal" data-bar-width="75">
               <div class="skill-name">
                 <span> Javascript </span>
               </div>
             </div>
           </div>
           <div class="skill-progress">
-            <div class="fifty-percent mb-orange">
+            <div class="fifty-percent mb-teal" data-bar-width="65">
               <div class="skill-name">
-                <span> NodeJs </span>
+                <span> NodeJs(Express) </span>
               </div>
             </div>
           </div>
           <div class="skill-progress">
-            <div class="sixty-five-percent mb-light-purple">
+            <div class="eighty-percent mb-light-purple" data-bar-width="60">
               <div class="skill-name">
                 <span> MongoDB </span>
               </div>
             </div>
-          </div>
 
+          </div>
           <div class="skill-progress">
-            <div class="seventy-five-percent mb-teal">
+            <div class="eighty-percent mb-orange" data-bar-width="60">
               <div class="skill-name">
-                <span> SQL </span>
+                <span> MySQL </span>
               </div>
             </div>
+            
           </div>
           <div class="skill-progress">
-            <div class="fifty-percent mb-blue">
+            <div class="eighty-percent mb-blue" data-bar-width="55">
               <div class="skill-name">
                 <span> TypeScript </span>
               </div>
             </div>
+            
+          </div>
+          <div class="skill-progress">
+            <div class="eighty-percent mb-light-purple" data-bar-width="75">
+              <div class="skill-name">
+                <span> Bootstrap </span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="skill-progress">
+            <div class="eighty-percent mb-blue" data-bar-width="70">
+              <div class="skill-name">
+                <span> NextJS 13 </span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -201,11 +224,11 @@
           <div class="timeline-box">
             <div class="timeline-container">
               <div class="timeline-logo">
-                <img src="./logo/lg-1.png" />
+                <img
+                  src="./logo/lg-1.png"
+                />
               </div>
-              <h3 class="experience-designation m0 m-blue">
-                Frontend Developer
-              </h3>
+              <h3 class="experience-designation m0 m-blue">Frontend Developer</h3>
               <h4 class="experience-company-name">Greet Labs Pvt Ltd</h4>
               <h5 class="experience-duration m0">March 2023 - Present</h5>
 
@@ -221,15 +244,13 @@
           <div class="timeline-box right">
             <div class="timeline-container">
               <div class="timeline-logo">
-                <img src="./logo/lg-2.png" />
+                <img
+                  src="./logo/lg-2.png"
+                />
               </div>
-              <h3 class="experience-designation m0 m-blue">
-                Associate Software Engineer
-              </h3>
+              <h3 class="experience-designation m0 m-blue">Associate Software Engineer</h3>
               <h4 class="experience-company-name">Marlabs LLC</h4>
-              <h5 class="experience-duration m0">
-                December 2021 - February 2023
-              </h5>
+              <h5 class="experience-duration m0">December 2021 - February 2023</h5>
               <p class="experience-description text-justify">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -248,7 +269,7 @@
           </div>
         </div>
       </section>
-      <!-- Education Section -->
+
       <section id="education">
         <h1 class="section-heading mb75px">
           <span>
@@ -261,40 +282,62 @@
           <div class="timeline-box left">
             <div class="timeline-container">
               <div class="timeline-logo">
-                <img src="./edu-logo/gd-1.png" />
+                <img
+                  src="./edu-logo/gd-1.png"
+                />
               </div>
               <h3 class="experience-designation m0 m-blue">B.tech(ECE)</h3>
-              <h4 class="experience-company-name">
-                Buddha Institute of Technology
-              </h4>
+              <h4 class="experience-company-name">Buddha Institute of Technology</h4>
               <h5 class="experience-duration m0">July 2016 - September 2020</h5>
-
               <p class="experience-description m0">CGPA - 7.12</p>
+
+              <p class="experience-description text-justify" hidden>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
             </div>
           </div>
 
           <div class="timeline-box right">
             <div class="timeline-container">
               <div class="timeline-logo">
-                <img src="./edu-logo/up-1.png" />
+                <img
+                  src="./edu-logo/up-1.png"
+                />
               </div>
               <h3 class="experience-designation m0 m-blue">Intermediate</h3>
-              <h4 class="experience-company-name">Udit Narain I C</h4>
+              <h4 class="experience-company-name">Udit Narain Intermediate College</h4>
               <h5 class="experience-duration m0">April 2013 - May 2015</h5>
               <p class="experience-description m0">CGPA - 8.4</p>
+              <p class="experience-description text-justify" hidden>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
             </div>
           </div>
 
           <div class="timeline-box left">
             <div class="timeline-container">
               <div class="timeline-logo">
-                <img src="./edu-logo/cb-1.png" />
+                <img
+                  src="./edu-logo/cb-1.png"
+                />
               </div>
               <h3 class="experience-designation m0 m-blue">Matriculation</h3>
-              <h4 class="experience-company-name">SDDT I C</h4>
+              <h4 class="experience-company-name">SDDT Intermediate College</h4>
               <h5 class="experience-duration m0">April 2011 - May 2013</h5>
-
               <p class="experience-description m0">CGPA - 8.8</p>
+
+              <p class="experience-description text-justify" hidden>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
             </div>
           </div>
 
@@ -307,7 +350,7 @@
           </div>
         </div>
       </section>
-      <!-- Portfolio Section -->
+
       <section id="portfolio">
         <h1 class="section-heading mb75px">
           <span>
@@ -412,11 +455,11 @@
             <h3>My Address</h3>
             <div class="my-details-info-container">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Bangalore, India</span>
+              <span>Delhi, India</span>
             </div>
             <div class="my-details-info-container">
               <i class="fas fa-mobile-alt"></i>
-              <span>8707468040</span>
+              <span>+91-8707468040</span>
             </div>
             <div class="my-details-info-container">
               <i class="far fa-envelope"></i>
@@ -428,24 +471,19 @@
         <div class="text-center social-icons">
           <ul class="no-list-style horizontal-list">
             <li>
-              <a href="https://www.linkedin.com/in/ashu09/" target="_blank">
+              <a href="https://www.linkedin.com/in/ashu09/">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
 
-            
-
             <li>
-              <a href="https://github.com/ashish-pro"
-              target="_blank">
+              <a href="https://github.com/ashish-pro" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
 
             <li>
-              <a
-                href="#"
-              >
+              <a href="#" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
